@@ -1,3 +1,4 @@
+overview
 basic-terminologies
 what-is-treatment-effectiveness
 how-can-careful-design-of-a-standard-clinical-trial-help-us-obtain-a-good-understanding-of-how-good-a-drug-is
@@ -28,9 +29,3 @@ existing-methods-to-deal-with-adherence
 our-methods-development
 why-our-research-is-valuable-in-practical-settings
 research-outputs
-journal-articles
-conference-proceeding
-theses-by-trainees
-international-conference-presentations
-national-conference-presentations
-workshop-and-seminar-presentations
