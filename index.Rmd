@@ -1,0 +1,64 @@
+--- 
+title: "Developing and Evaluating Causal Inference Methods for Pragmatic Trials"
+author: "Ehsan Karim & RWCT–002 collaborators"
+date: ""
+site: bookdown::bookdown_site
+output:
+  bookdown::html_document2:
+    includes:
+      in_header: header.html
+      css: [style.css]
+  bookdown::gitbook:
+    includes:
+      in_header: header.html
+  bookdown::pdf_book:
+    includes:
+      in_header: header.html
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: ehsanx/intro2R
+description: "Intro to R."
+header-includes: 
+  - \usepackage{tcolorbox}
+  - \newtcolorbox{blackbox}{colback=black,colframe=orange,coltext=white,boxsep=5pt,arc=4pt}
+  - \usepackage{color}
+  - \usepackage{framed}
+  - \setlength{\fboxsep}{.8em}
+---
+
+\newenvironment{blackbox}{
+  \definecolor{shadecolor}{rgb}{0, 0, 0}  % black
+  \color{white}
+  \begin{shaded}}
+ {\end{shaded}}
+
+# Objectives {-}
+
+In this project, we have address some of the methodological issues underlying the suitability of some of the methods already proposed in the literature to tackle generalizability of findings associated with non-adherence to medication as outlines in the protocol, and how to enhance those methods for the settings that are more reflective of real-world settings. 
+
+- **Objective 1**. To assess the suitability of ‘g-methods’ in addressing non-adherence under various realistic pragmatic trial settings when some of the post-randomization predictor values are missing. 
+- **Objective 2**. To estimate the ‘patient-oriented effect’ considering various types of adherence in the estimation process. 
+- **Objective 3**. To compare various instrumental variable-based estimators to address non-adherence.
+
+
+## Members {-}
+
+-	Mohammad Ehsanul (Ehsan) Karim (SPPH UBC, CHEOS) Oversee the project objectives, supervising trainees in conducting research and writing scientific manuscripts, presenting research finding, communicating and coordinating with the patient partner
+-	Paul Gustafson (Statistics UBC) Supervising trainees in conducting research and writing scientific manuscripts, providing feedback in manuscripts and proposal
+-	Joan Hu (Statistics Simon Fraser University (SFU)) Providing feedback in manuscripts and proposal
+-	Hubert Wong (UBC, CHEOS) Providing feedback in manuscripts and proposal
+-	Samar Hejazi (Fraser Health) Reviewing manuscripts and providing feedback in proposal
+-	Sharon Roman (Patient Partners) Reviewing lay summaries and providing feedback 
+-	Derek Ouyang (SPPH UBC, CHEOS) Trainee, providing feedback on the proposal
+-	Md Belal Hossain (SPPH UBC) Trainee, conducting research, manuscript writing, presenting research in national and international conferences 
+-	Lucy Mosquera (Statistics UBC) Trainee, conducting research, manuscript writing, presenting research in national and international conferences
+-	Eric Sanders (Statistics UBC) Trainee, conducting research, manuscript writing, presenting research in national conferences and seminar
+
+
+## Funding {-}
+
+```{block, type='rmdcomment'}
+BC SUPPORT Unit Real World Clinical Trials (RWCT) Methods Cluster Project (RWCT – 002).
+```

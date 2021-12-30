@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 3 Addressing the non-adherence problem using econometric methodologies | Developing and Evaluating Causal Inference Methods for Pragmatic Trials</title>
+  <meta name="description" content="Intro to R." />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 3 Addressing the non-adherence problem using econometric methodologies | Developing and Evaluating Causal Inference Methods for Pragmatic Trials" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Intro to R." />
+  <meta name="github-repo" content="ehsanx/intro2R" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 3 Addressing the non-adherence problem using econometric methodologies | Developing and Evaluating Causal Inference Methods for Pragmatic Trials" />
+  
+  <meta name="twitter:description" content="Intro to R." />
+  
+
+<meta name="author" content="Ehsan Karim &amp; RWCT–002 collaborators" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="addressing-the-medication-non-adherence-problem-using-data-that-are-collected-over-time.html"/>
+<link rel="next" href="addressing-the-partial-non-adherence-problem.html"/>
+<script src="libs/header-attrs-2.9/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<script type="text/javascript">
+
+// toggle visibility of R source blocks in R Markdown output
+function toggle_R() {
+  var x = document.getElementsByClassName('r');
+  if (x.length == 0) return;
+  function toggle_vis(o) {
+    var d = o.style.display;
+    o.style.display = (d == 'block' || d == '') ? 'none':'block';
+  }
+
+  for (i = 0; i < x.length; i++) {
+    var y = x[i];
+    if (y.tagName.toLowerCase() === 'pre') toggle_vis(y);
+  }
+
+    var elem = document.getElementById("myButton1");
+    if (elem.value === "Hide Global") elem.value = "Show Global";
+    else elem.value = "Hide Global";
+}
+
+document.write('<input onclick="toggle_R();" type="button" value="Hide Global" id="myButton1" style="position: absolute; top: 10%; right: 2%; z-index: 200"></input>')
+
+</script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Developing and Evaluating Causal Inference Methods for Pragmatic Trials</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Objectives</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#members"><i class="fa fa-check"></i>Members</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#funding"><i class="fa fa-check"></i>Funding</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="basic-terminologies.html"><a href="basic-terminologies.html"><i class="fa fa-check"></i><b>1</b> Basic terminologies</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="basic-terminologies.html"><a href="basic-terminologies.html#what-is-treatment-effectiveness"><i class="fa fa-check"></i><b>1.1</b> What is ‘treatment effectiveness?’</a></li>
+<li class="chapter" data-level="1.2" data-path="basic-terminologies.html"><a href="basic-terminologies.html#how-can-careful-design-of-a-standard-clinical-trial-help-us-obtain-a-good-understanding-of-how-good-a-drug-is"><i class="fa fa-check"></i><b>1.2</b> How can careful design of a standard clinical trial help us obtain a good understanding of how good a drug is?</a></li>
+<li class="chapter" data-level="1.3" data-path="basic-terminologies.html"><a href="basic-terminologies.html#why-do-we-need-to-be-very-careful-about-which-patients-are-selected-in-a-standard-clinical-trial"><i class="fa fa-check"></i><b>1.3</b> Why do we need to be very careful about which patients are selected in a standard clinical trial?</a></li>
+<li class="chapter" data-level="1.4" data-path="basic-terminologies.html"><a href="basic-terminologies.html#where-do-the-regular-clinical-trials-fail"><i class="fa fa-check"></i><b>1.4</b> Where do the regular clinical trials fail?</a></li>
+<li class="chapter" data-level="1.5" data-path="basic-terminologies.html"><a href="basic-terminologies.html#what-is-a-clinical-trial-protocol"><i class="fa fa-check"></i><b>1.5</b> What is a clinical trial protocol?</a></li>
+<li class="chapter" data-level="1.6" data-path="basic-terminologies.html"><a href="basic-terminologies.html#what-is-a-real-world-pragmatic-clinical-trial-is-it-more-relevant-from-a-patient-perspective"><i class="fa fa-check"></i><b>1.6</b> What is a real-world pragmatic clinical trial? Is it more relevant from a patient perspective?</a></li>
+<li class="chapter" data-level="1.7" data-path="basic-terminologies.html"><a href="basic-terminologies.html#challenges-with-pragmatic-trials-in-estimating-treatment-effect-statistical-analysis-of-these-data-is-not-so-simple-anymore."><i class="fa fa-check"></i><b>1.7</b> Challenges with Pragmatic trials in estimating treatment effect: statistical analysis of these data is not so simple anymore.</a></li>
+<li class="chapter" data-level="1.8" data-path="basic-terminologies.html"><a href="basic-terminologies.html#what-is-the-effect-of-the-treatment-on-the-patients-who-actually-took-the-drug"><i class="fa fa-check"></i><b>1.8</b> What is the effect of the treatment on the patients who ‘actually took the drug?’</a></li>
+<li class="chapter" data-level="1.9" data-path="basic-terminologies.html"><a href="basic-terminologies.html#why-analysis-strategies-used-for-standard-clinical-trials-fail-for-analyzing-pragmatic-trial-data"><i class="fa fa-check"></i><b>1.9</b> Why analysis strategies used for standard clinical trials fail for analyzing pragmatic trial data?</a></li>
+<li class="chapter" data-level="1.10" data-path="basic-terminologies.html"><a href="basic-terminologies.html#causal-inference-methods-can-address-some-of-the-above-challenges"><i class="fa fa-check"></i><b>1.10</b> ‘Causal inference’ methods can address some of the above challenges</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="addressing-the-medication-non-adherence-problem-using-data-that-are-collected-over-time.html"><a href="addressing-the-medication-non-adherence-problem-using-data-that-are-collected-over-time.html"><i class="fa fa-check"></i><b>2</b> Addressing the medication non-adherence problem using data that are collected over time</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="addressing-the-medication-non-adherence-problem-using-data-that-are-collected-over-time.html"><a href="addressing-the-medication-non-adherence-problem-using-data-that-are-collected-over-time.html#background-about-data-collection"><i class="fa fa-check"></i><b>2.1</b> Background about data collection</a></li>
+<li class="chapter" data-level="2.2" data-path="addressing-the-medication-non-adherence-problem-using-data-that-are-collected-over-time.html"><a href="addressing-the-medication-non-adherence-problem-using-data-that-are-collected-over-time.html#why-researcher-should-budget-accordingly-to-collect-patient-information-regularly"><i class="fa fa-check"></i><b>2.2</b> Why researcher should budget accordingly to collect patient information regularly</a></li>
+<li class="chapter" data-level="2.3" data-path="addressing-the-medication-non-adherence-problem-using-data-that-are-collected-over-time.html"><a href="addressing-the-medication-non-adherence-problem-using-data-that-are-collected-over-time.html#statistical-development-of-longitudinal-data-analysis-methods-and-gap-in-research"><i class="fa fa-check"></i><b>2.3</b> Statistical development of longitudinal data analysis methods, and gap in research</a></li>
+<li class="chapter" data-level="2.4" data-path="addressing-the-medication-non-adherence-problem-using-data-that-are-collected-over-time.html"><a href="addressing-the-medication-non-adherence-problem-using-data-that-are-collected-over-time.html#our-research-filling-the-gap"><i class="fa fa-check"></i><b>2.4</b> Our research filling the gap</a></li>
+<li class="chapter" data-level="2.5" data-path="addressing-the-medication-non-adherence-problem-using-data-that-are-collected-over-time.html"><a href="addressing-the-medication-non-adherence-problem-using-data-that-are-collected-over-time.html#a-demonstration-of-an-application-of-our-method"><i class="fa fa-check"></i><b>2.5</b> A demonstration of an application of our method</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="addressing-the-non-adherence-problem-using-econometric-methodologies.html"><a href="addressing-the-non-adherence-problem-using-econometric-methodologies.html"><i class="fa fa-check"></i><b>3</b> Addressing the non-adherence problem using econometric methodologies</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="addressing-the-non-adherence-problem-using-econometric-methodologies.html"><a href="addressing-the-non-adherence-problem-using-econometric-methodologies.html#background"><i class="fa fa-check"></i><b>3.1</b> Background</a></li>
+<li class="chapter" data-level="3.2" data-path="addressing-the-non-adherence-problem-using-econometric-methodologies.html"><a href="addressing-the-non-adherence-problem-using-econometric-methodologies.html#advantage-of-econometric-methods"><i class="fa fa-check"></i><b>3.2</b> Advantage of econometric methods</a></li>
+<li class="chapter" data-level="3.3" data-path="addressing-the-non-adherence-problem-using-econometric-methodologies.html"><a href="addressing-the-non-adherence-problem-using-econometric-methodologies.html#different-methods-suitable-in-different-clinical-settings"><i class="fa fa-check"></i><b>3.3</b> Different methods suitable in different clinical settings</a></li>
+<li class="chapter" data-level="3.4" data-path="addressing-the-non-adherence-problem-using-econometric-methodologies.html"><a href="addressing-the-non-adherence-problem-using-econometric-methodologies.html#our-investigation"><i class="fa fa-check"></i><b>3.4</b> Our investigation</a></li>
+<li class="chapter" data-level="3.5" data-path="addressing-the-non-adherence-problem-using-econometric-methodologies.html"><a href="addressing-the-non-adherence-problem-using-econometric-methodologies.html#how-our-research-is-helpful-for-future-researchers"><i class="fa fa-check"></i><b>3.5</b> How our research is helpful for future researchers</a></li>
+<li class="chapter" data-level="3.6" data-path="addressing-the-non-adherence-problem-using-econometric-methodologies.html"><a href="addressing-the-non-adherence-problem-using-econometric-methodologies.html#application-of-the-methods-in-a-real-data"><i class="fa fa-check"></i><b>3.6</b> Application of the methods in a real data</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="addressing-the-partial-non-adherence-problem.html"><a href="addressing-the-partial-non-adherence-problem.html"><i class="fa fa-check"></i><b>4</b> Addressing the partial non-adherence problem</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="addressing-the-partial-non-adherence-problem.html"><a href="addressing-the-partial-non-adherence-problem.html#background-1"><i class="fa fa-check"></i><b>4.1</b> Background</a></li>
+<li class="chapter" data-level="4.2" data-path="addressing-the-partial-non-adherence-problem.html"><a href="addressing-the-partial-non-adherence-problem.html#existing-methods-to-deal-with-adherence"><i class="fa fa-check"></i><b>4.2</b> Existing methods to deal with adherence</a></li>
+<li class="chapter" data-level="4.3" data-path="addressing-the-partial-non-adherence-problem.html"><a href="addressing-the-partial-non-adherence-problem.html#our-methods-development"><i class="fa fa-check"></i><b>4.3</b> Our methods development</a></li>
+<li class="chapter" data-level="4.4" data-path="addressing-the-partial-non-adherence-problem.html"><a href="addressing-the-partial-non-adherence-problem.html#why-our-research-is-valuable-in-practical-settings"><i class="fa fa-check"></i><b>4.4</b> Why our research is valuable in practical settings</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="research-outputs.html"><a href="research-outputs.html"><i class="fa fa-check"></i><b>5</b> Research Outputs</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="research-outputs.html"><a href="research-outputs.html#journal-articles"><i class="fa fa-check"></i><b>5.1</b> Journal articles</a></li>
+<li class="chapter" data-level="5.2" data-path="research-outputs.html"><a href="research-outputs.html#conference-proceeding"><i class="fa fa-check"></i><b>5.2</b> Conference Proceeding</a></li>
+<li class="chapter" data-level="5.3" data-path="research-outputs.html"><a href="research-outputs.html#theses-by-trainees"><i class="fa fa-check"></i><b>5.3</b> Theses by trainees</a></li>
+<li class="chapter" data-level="5.4" data-path="research-outputs.html"><a href="research-outputs.html#international-conference-presentations"><i class="fa fa-check"></i><b>5.4</b> International Conference Presentations</a></li>
+<li class="chapter" data-level="5.5" data-path="research-outputs.html"><a href="research-outputs.html#national-conference-presentations"><i class="fa fa-check"></i><b>5.5</b> National Conference Presentations</a></li>
+<li class="chapter" data-level="5.6" data-path="research-outputs.html"><a href="research-outputs.html#workshop-and-seminar-presentations"><i class="fa fa-check"></i><b>5.6</b> Workshop and Seminar Presentations</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://ehsank.com/" target="blank">Contact</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Developing and Evaluating Causal Inference Methods for Pragmatic Trials</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="addressing-the-non-adherence-problem-using-econometric-methodologies" class="section level1" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Addressing the non-adherence problem using econometric methodologies</h1>
+<div id="background" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Background</h2>
+<p>Available methods to deal with non-adherence in different disciplines: For dealing with medication non-adherence, a few methods are proposed in the econometric literature (e.g., popularly known as instrumental variable analysis). These analysis strategies have a very different methodological origin from the epidemiological methods that are used to deal with non-adherence (e.g., inverse probability weighting approaches to estimate the per-protocol effect). Although both of these methods have the potential to address the treatment non-adherence issue, it is currently unknown how good those econometric methods are compared to the epidemiological methods if we apply them in the same context, with a particular focus on pragmatic trials. In the current project, we explored the statistical characteristics of both of these methods and determined how useful these methods are in various scenarios.</p>
+</div>
+<div id="advantage-of-econometric-methods" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> Advantage of econometric methods</h2>
+<p>In regular care or hospitals, collecting information about patient’s health over time is often difficult. Particularly for chronic diseases, following patients for a long time may be difficult and costly, if a reliable electronic health care record system is not available (e.g., many countries do not have such a database). Moreover, collecting information over time requires measuring all post-randomization factors (measured after randomization) that impact treatment non-adherence. Not measuring those relevant observations often results in biased treatment effect estimates. Results from the analysis without relevant information over time may misleadingly indicate a less beneficial treatment as an efficacious treatment or a beneficial treatment as no beneficial. In such scenarios, econometric methods can be useful as it relies on collecting information about patients’ health only a single time point (e.g., single visit after randomization). The use of these econometric methods offers to reduce the burden of collecting data over time.</p>
+</div>
+<div id="different-methods-suitable-in-different-clinical-settings" class="section level2" number="3.3">
+<h2><span class="header-section-number">3.3</span> Different methods suitable in different clinical settings</h2>
+<p>However, in order to properly analyze the data using these ecomnometric methods, there are other statistical assumptions that should be met (i.e., in certain clinical settings, these methods may not perform optimally). We can use epidemiological methods in the same setting, but they require different statistical assumptions (i.e., these methods may not perform optimally in some other clinical settings). However, it is possible that under different clinical settings, these methods may not perform similarly. One example could be a genetic factor influencing a lifestyle behavious (e.g., feeling hungry and eating frequently) and health outcome, but that lifestyle behaviour then impacts the adherence pattern for a patient (e.g., medication-taking requires some fasting). There may be no direct way to measure or identify that genetic factor. Ideally, econometric methods perform well in these settings in terms of bias even when the genetic factor remains unmeasured, but epidemiologic methods may not perform well in this same setting. In the literature, to address non-adherence, we could not find a comprehensive investigation of which methods are appropriate to use under which practical clinical setting.</p>
+</div>
+<div id="our-investigation" class="section level2" number="3.4">
+<h2><span class="header-section-number">3.4</span> Our investigation</h2>
+<p>In our project, we, therefore, aimed to identify which method is appropriate in which practical clinical setting. We considered the following scenarios:</p>
+<ol style="list-style-type: upper-roman">
+<li>We considered a scenario when treatment adherence is influenced by patients’ characteristics, e.g., older age, gender, socioeconomic status, etc. We considered scenarios when information on most characteristics is measured. This is the ideal scenario where econometric methods should provide optimal results. In terms of bias, both methods performed well, but the uncertainty associated with econometric methods was high.</li>
+<li>All methods have different statistical modelling assumptions. We considered scenarios with minor to substantial violations of those assumptions and checked which method can provide us better treatment effect estimates after addressing the non-adherence issue. We have identified scenarios where econometric methods performed well, and separately identified scenarios when epidemiological methods performed well. We have also showed what happens when assumptions necessary for both methods are violated (e.g., a worst-case scenario for both methods), compared the findings.</li>
+<li>In many pragmatic trials, not every participant in the treated group (who have prescribed a new treatment) takes the assigned treatment. On the other hand, the new treatment is usually beyond the reach of the participants in the control group (who are prescribed a placebo). We considered a number of scenarios, where treatment non-adherence rates are different (between 10-90%) in the treated group. The econometric methods generally did not perform well when the adherence patterns for the treated group and the control group were different. In the econometric literature, there are some new methods that claim to reduce uncertainty. However, in our analysis, we found that even those new methods may report increased uncertainty when the adherence rate is moderate.</li>
+</ol>
+</div>
+<div id="how-our-research-is-helpful-for-future-researchers" class="section level2" number="3.5">
+<h2><span class="header-section-number">3.5</span> How our research is helpful for future researchers</h2>
+<p>We explored the above realistic scenarios by analyzing a series of the mimicked (i.e., simulated) data. Results from these analyses helped us understand how each method performed in each clinical setting. Understanding these comparisons will guide future researchers in determining suitable analysis strategies.
+Our analysis showed no single method that can obtain better results in all clinical settings. It is essential to have deep knowledge in the disease area to be able to understand the complexity of the setting and which statistical assumptions are plausible. Therefore, statisticians should always work with researchers and patient partners knowledgeable about the disease area to get a better sense of the complexity of the problem, and then analyze the data appropriately with that understanding.</p>
+</div>
+<div id="application-of-the-methods-in-a-real-data" class="section level2" number="3.6">
+<h2><span class="header-section-number">3.6</span> Application of the methods in a real data</h2>
+<p>We also analyze clinical trial data estimating the effect of vitamin A supplementation on childhood mortality after addressing non-adherence. In this real dataset, vitamin A supplements were unavailable to children in the control group. On the other hand, not every child took the assigned vitamin A supplementation in the treated group, and the non-adherence rate was 20% among those from the treated group (similar to our mimicked data experience). This case study demonstrates real-world applications of both methods under consideration to account for non-adherence in the same setting.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="addressing-the-medication-non-adherence-problem-using-data-that-are-collected-over-time.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="addressing-the-partial-non-adherence-problem.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/ehsanx/Causal-Inference-Methods-for-Pragmatic-Trials/edit/master/3IV.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["CI4PT.pdf", "CI4PT.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

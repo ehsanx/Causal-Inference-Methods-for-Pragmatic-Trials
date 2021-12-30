@@ -1,0 +1,42 @@
+# Research Outputs
+
+## Journal articles
+
+1.	Karim ME, Hossain MB, Can LOCF be a reasonable approach for addressing sparse measurement issues? An illustration from per-protocol analysis in pragmatic trials, Pharmaceutical Statistics, Submission ID PST-21-0145, Submitted August 29, 2021, under review (Objective 1)
+2.	Mosquera LK, Karim ME, Hossain MB. Finite Sample Properties of Inverse Probability of Adherence Weighted Estimator of the Per-protocol Effect for Sustained Treatment Strategies”, Communications in Statistics - Simulation and Computation, Submission ID 214511100, April 16, 2021, under review (Objectives 1 and 2)
+3.	Hossain MB, Mosquera LK, Karim ME. Analysis approaches to address treatment nonadherence in pragmatic trials with point-treatment settings: a simulation study. BMC Medical Research Methodology, Submission ID 7b97d5b7-11b2-4363-ac51-3f00eb185340, April 13, 2021, under revision (Objective 2)
+4.	Hossain MB, Karim ME. Key considerations for choosing a statistical method to deal with incomplete treatment adherence in pragmatic trials. Pharmaceutical Statistics, Submission ID PST-21-0132, August 13, 2021 (Objective 2)
+5.	Sanders E, Gustafson P, Karim ME “Incorporating Partial Adherence Into the Principal Stratification Analysis Framework”, Statistics in Medicine, published online: 20-April-2021, https://doi.org/10.1002/sim.8986 (Objective 3)
+6.	Sanders E, Gustafson P, Karim ME “Treatment effect estimate bounds resulting from assuming monotone compliance-response in a principal stratification approach”, Statistics and Probability Letters, Submission ID STAPRO-D-21-00538, Sept 1, 2021, under review (Objective 3)
+
+## Conference Proceeding
+
+1.	Hossain MB, Mosquera L, Karim ME. Performance of statistical methods to address treatment non-adherence in pragmatic clinical trials with point treatment settings: a simulation study. University of Toronto Journal of Public Health. 2021; 2(2). doi: https://doi.org/10.33137/utjph.v2i2.36762 (Objective 2)
+2.	Mosquera, L., & Karim, M. E. (2021, February). Evaluating Adjusted Per-Protocol Effect Estimators in Pragmatic Trials to Address Treatment Non-Adherence. In International Journal Of Clinical Pharmacy (Vol. 43, No. 1, pp. 298-298). Netherlands: Springer. https://doi.org/10.1007/s11096-020-01213-y (Objective 2)
+
+## Theses by trainees
+1.	Sanders E. Incorporating Partial Adherence into the Principal Stratification Analysis Framework, Statistics, UBC, MSc thesis, 2019. (Objective 3)
+2.	Mosquera,L. Exploring inverse probability weighted per-protocol estimates to adjust for non-adherence using post-randomization covariates : a simulation study, Statistics, UBC, MSc thesis, 2020. (Objectives 1 and 2)
+
+## International Conference Presentations
+
+1.	Karim ME (joint work with Hossain MB) Implications of choosing different imputation methods while inferring about per-protocol effects of sustained treatment strategies, ESPACOMP Conference (Virtual conference), Seraing, Belgium; 21 Oct 2021. (Objective 1)
+2.	Hossain MB (joint work with Karim ME) Addressing differential medication non-adherence in pragmatic trials with point-treatment settings: a simulation study. 25th ESPACOMP Conference (Virtual conference), Seraing, Belgium; 21 Oct 2021. (Objective 2)
+3.	Hossain MB (joint work with Karim ME) Comparison of statistical methods to address treatment nonadherence in pragmatic trials with only baseline covariate-measurements. 24th ESPACOMP: International Society for Medication Adherence Conference (Virtual conference), Seraing, Belgium; 10 Nov 2020. (Objective 2)
+4.	Mosquera LK (joint work with Karim ME) Evaluating Adjusted Per-Protocol Effect Estimators in Pragmatic Trials to Address Treatment Non-Adherence. 24th ESPACOMP: International Society for Medication Adherence Conference (Virtual conference), Seraing, Belgium; 10 Nov 2020. (Objective 2)
+5.	Hossain MB (joint work with Karim ME) Review of statistical methods to address treatment nonadherence in the pragmatic trial context. 41st Annual Conference of the International Society for Clinical Biostatistics (ISCB), Kraków, Poland, August 18, 2020 [RP3.28] (Objective 2)
+6.	Mosquera LK (joint work with Karim ME) Properties of Adjusted Per-Protocol Effect Estimators to Address Treatment Non-Adherence in Pragmatic Trials. 41st Annual Conference of the International Society for Clinical Biostatistics (ISCB), Kraków, Poland, August 18, 2020 [RP3.26] (Objective 2)
+7. Mosquera LK (joint work with Karim ME) Comparing instrumental variable and naive methods for estimating the causal effect of treatment in pragmatic trials with non-compliance, The 2019 Atlantic Causal Inference Conference (ACIC), Montreal, May, 2019 (Objective 2)
+
+## National Conference Presentations
+
+1.	Sanders E (joint work with Gustafson P, Karim ME) Incorporating Partial Adherence into the Principal Stratification Analysis Framework, Annual Meeting of the Statistical Society of Canada, Calgary, May, 2019 (Objective 3)
+2.	Hossain MB (joint work with Karim ME) Comparing methods to address sparse follow-up issues in estimating per-protocol effects in pragmatic clinical trials: a simulation study. The ninth annual Canadian Statistics Student Conference (Virtual conference), Ottawa, Canada; 26 May 2021 (Objective 1)
+3.	Hossain MB (joint work with Karim ME) Statistical approaches to deal with treatment nonadherence in the pragmatic trial context. Canadian Statistics Student Conference 2020 (Virtual conference), Ottawa, Canada; 30 May 2020. (Objective 2) 
+4.	Hossain MB (joint work with Karim ME) “Performance of statistical methods to address treatment non-adherence in pragmatic clinical trials with point-treatment settings: a simulation study”. Canadian Statistics Student Conference 2021, (online); June 5, 2021. (Objective 2)
+5.	Hossain MB (joint work with Karim ME) Comparing statistical methods in estimating per-protocol effects to address sparse follow-up issue in pragmatic clinical trials with treatment non-adherence. 6th Canadian Conference in Applied Statistics (Virtual conference), Montreal, Canada; 15 May 2021 (Objective 1)
+
+## Workshop and Seminar Presentations
+
+1.	Hossain MB (joint work with Karim ME) Performance of statistical methods to address treatment non-adherence in pragmatic clinical trials with point-treatment settings: a simulation study. 2021 SORA-TABA Annual Workshop & DLSPH Biostatistics Research Day, May 27-28, 2021, Online. (Objective 2)
+2.	Sanders E (joint work with Gustafson P, Karim ME) Incorporating Partial Adherence into the Principal Stratification Analysis Framework, Statistics Seminar, Department of Statistics, University of British Columbia, August 15, 2019. (Objective 3)
