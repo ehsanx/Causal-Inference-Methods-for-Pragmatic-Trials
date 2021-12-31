@@ -76,3 +76,7 @@ In this project, we have address some of the methodological issues underlying th
 ```{block, type='rmdcomment'}
 BC SUPPORT Unit Real World Clinical Trials (RWCT) Methods Cluster Project (RWCT – 002).
 ```
+
+## Contact {-}
+
+For questions or comments, please [contact](https://ehsank.com/) the lead of the project directly.
