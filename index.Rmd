@@ -18,8 +18,8 @@ documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
-github-repo: ehsanx/intro2R
-description: "Intro to R."
+github-repo: ehsanx/Causal-Inference-Methods-for-Pragmatic-Trials
+description: "Causal Inference Methods for Pragmatic Trials."
 header-includes: 
   - \usepackage{tcolorbox}
   - \newtcolorbox{blackbox}{colback=black,colframe=orange,coltext=white,boxsep=5pt,arc=4pt}
