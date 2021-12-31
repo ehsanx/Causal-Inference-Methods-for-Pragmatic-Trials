@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Developing and Evaluating Causal Inference Methods for Pragmatic Trials</title>
+  <title>Chapter 2 Basic terminologies: Developing statistical methods in order to draw conclusions about whether a drug is helpful in real-world clinical practice | Developing and Evaluating Causal Inference Methods for Pragmatic Trials</title>
   <meta name="description" content="Intro to R." />
   <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Developing and Evaluating Causal Inference Methods for Pragmatic Trials" />
+  <meta property="og:title" content="Chapter 2 Basic terminologies: Developing statistical methods in order to draw conclusions about whether a drug is helpful in real-world clinical practice | Developing and Evaluating Causal Inference Methods for Pragmatic Trials" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="ehsanx/intro2R" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Developing and Evaluating Causal Inference Methods for Pragmatic Trials" />
+  <meta name="twitter:title" content="Chapter 2 Basic terminologies: Developing statistical methods in order to draw conclusions about whether a drug is helpful in real-world clinical practice | Developing and Evaluating Causal Inference Methods for Pragmatic Trials" />
   
   <meta name="twitter:description" content="Intro to R." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="basic-terminologies-developing-statistical-methods-in-order-to-draw-conclusions-about-whether-a-drug-is-helpful-in-real-world-clinical-practice.html"/>
+<link rel="prev" href="index.html"/>
+<link rel="next" href="addressing-the-medication-non-adherence-problem-using-data-that-are-collected-over-time.html"/>
 <script src="libs/header-attrs-2.9/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -170,54 +170,54 @@ document.write('<input onclick="toggle_R();" type="button" value="Hide Global" i
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Developing and Evaluating Causal Inference Methods for Pragmatic Trials</h1>
-<p class="author"><em>Ehsan Karim &amp; RWCT–002 collaborators</em></p>
-</div>
-<div id="overview" class="section level1" number="1">
-<h1><span class="header-section-number">Chapter 1</span> Overview</h1>
-<p>Although clinical trials are considered to be the gold standard for estimating the treatment effectiveness, the results of these trials are often not generalizable. Pragmatic trials include a broader range of subjects, who receive the treatment in everyday clinical practice in a real-world usual care scenario; and are much more representative than those selected for a regular clinical trial. In the pragmatic trials, as in the usual care scenario, patients can deviate from the protocol, e.g., they may not be adherent to the treatment they were assigned at the beginning of the trial, they may switch treatment, discontinue as people do in a real-world setting. Consequently, analyzing the datasets from these pragmatic trials require properly accounting for patients based on whether they have actually received the treatment or not; and hence analysis strategies need to be updated and developed accordingly. The simplistic analysis strategies of clinical trials are often inadequate in the presence of treatment non-adherence. Our project has developed and evaluated methods for promoting causal inference in analyzing pragmatic trial data. Patients and researchers will benefit from these research outcomes, as we have outlined which methods are appropriate to analyze a variety of clinical settings where non-adherence or partial adherence exists in pragmatic trials. Appropriately analyzing the pragmatic trials will inform healthcare professionals, patients, and other stakeholders about the implication of taking that treatment from an evidence-based approach; and the conclusions from these pragmatic trials are more suitable and relevant for health care decision-makers and patients.</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ur1etAewqHA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
-<div id="objectives" class="section level2 unnumbered">
-<h2>Objectives</h2>
-<p>In this project, we have address some of the methodological issues underlying the suitability of some of the methods already proposed in the literature to tackle generalizability of findings associated with non-adherence to medication as outlines in the protocol, and how to enhance those methods for the settings that are more reflective of real-world settings.</p>
+<div id="basic-terminologies-developing-statistical-methods-in-order-to-draw-conclusions-about-whether-a-drug-is-helpful-in-real-world-clinical-practice" class="section level1" number="2">
+<h1><span class="header-section-number">Chapter 2</span> Basic terminologies: Developing statistical methods in order to draw conclusions about whether a drug is helpful in real-world clinical practice</h1>
+<p>Medical research seeks to find out whether a treatment works for a disease or condition typically depends on comparing the results of two groups of people – those who get the treatment versus those who do not. The best research makes sure that the people in both groups are very similar (e.g. same age and have had a similar seriousness of the disease for an equal length of time) and that patients don’t get to choose or know whether they got the treatment or not (known as a placebo), until after the study is finished. Unfortunately, this type of research often does not include patients who are the most sick, of older age, or are from a different ethnic group. Also, sometimes there are patients who are unable to continue with the treatment and either take less of the drug or need to drop-out of the study, making it difficult to capture/measure their data. Therefore, it is difficult to accurately analyze the results of the study and be sure if the treatment would work as well on everyone who has the disease. This research project will use a new way to statistically analyze the results of a study to help patients and their doctors know whether a treatment is likely to work for them.</p>
+<div id="what-is-treatment-effectiveness" class="section level2 unnumbered">
+<h2>What is ‘treatment effectiveness?’</h2>
+<p>Let us consider that a drug company is proposing a new drug for curing patients suffering from a particular disease. To decide whether this new drug is actually effective in curing that disease or not, clinical trials are considered a gold standard. These clinical trials are designed carefully to make sure we can find out whether that drug is useful or not under a controlled condition. By control condition, I mean making sure that the trial participants are similar to each other in terms of age, sex and various other patient characteristics – controlling the conditions within our power. Ensuring such a control condition will enable statisticians to meaningfully compare the two groups:</p>
 <ul>
-<li><strong>Objective 1</strong>. To assess the suitability of ‘g-methods’ in addressing non-adherence under various realistic pragmatic trial settings when some of the post-randomization predictor values are missing.</li>
-<li><strong>Objective 2</strong>. To estimate the ‘patient-oriented effect’ considering various types of adherence in the estimation process.</li>
-<li><strong>Objective 3</strong>. To compare various instrumental variable-based estimators to address non-adherence.</li>
+<li>the group who took the drug (treated group), versus</li>
+<li>the group that was not given the drug (control group).</li>
 </ul>
+<p>If people from these two groups are mostly similar, but after the clinical trial end date, if we see there is a difference in cure /survival rate in these two groups, then we can attribute such difference as an ‘effect’ due to the drug only. We call this difference a treatment effect.</p>
 </div>
-<div id="lay-summaries" class="section level2 unnumbered">
-<h2>Lay summaries</h2>
-<ul>
-<li><p>While analyzing pragmatic trials datasets, not addressing incomplete treatment adherence can lead to biased treatment effect estimates. Sophisticated statistical methods are recently being developed, but often these methods are not well understood or accessible to the analysts. In this work, we have evaluated these methods and contrasted their performances with some of the commonly used methods under different realistic clinical settings. One particular challenging setting is when lab tests of the patients are done infrequently, and we have evaluated various missing data analysis techniques to address such challenges.</p></li>
-<li><p>There is some analytical guidance on how to estimate treatment effects when some patients are fully adherent, and some patients are not adherent at all (2 categories of adherence). However, in the real world, most patients are partially adherence. That means most patients start to take the treatment and then may decide to discontinue it for various reasons. Our research has extended the existing analytic approach to accommodate patients who may partially adhere to the treatment (e.g., considering a third category of adherence).</p></li>
-<li><p>For dealing with medication non-adherence, a few methods are proposed in the econometric literature (e.g., popularly known as instrumental variable analysis). However, it is currently unknown how good those econometric methods are compared to the statistical methods (as mentioned above) if we apply them in the same context, focusing on pragmatic trials. In our project, we explored the characteristics of both of these methods and determined how useful these methods are in various clinical scenarios.</p></li>
-</ul>
+<div id="how-can-careful-design-of-a-standard-clinical-trial-help-us-obtain-a-good-understanding-of-how-good-a-drug-is" class="section level2 unnumbered">
+<h2>How can careful design of a standard clinical trial help us obtain a good understanding of how good a drug is?</h2>
+<p>In these clinical trials, patients are assigned to different treatment groups at random (e.g., via coin toss). This randomization is a powerful tool that enables us to be free from bias. As the process of treatment assignment involves randomization, there is no reason for us to selectively assign older or sicker patients to the treated group, or selectively assign younger or healthier patients to the control group, thus creating bias. Statistically, it can be shown that when we have enough sample size, selecting patients by the process of randomization will eradicate most sources of bias.</p>
+<p>However, if we are not careful in patient selection, it is possible that the two groups could be somewhat different, particularly in small sample sizes. For example, consider a scenario where all the people from the treated group are much older than those in the control group. In that case, if we see that the cure /survival rate in these two groups are different, it is not clear how much of this difference is due to the drug, how much of it is due to age.</p>
 </div>
-<div id="members" class="section level2 unnumbered">
-<h2>Members</h2>
-<ul>
-<li>Mohammad Ehsanul (Ehsan) Karim (SPPH UBC, CHEOS) Oversee the project objectives, supervising trainees in conducting research and writing scientific manuscripts, presenting research finding, communicating and coordinating with the patient partner</li>
-<li>Paul Gustafson (Statistics UBC) Supervising trainees in conducting research and writing scientific manuscripts, providing feedback in manuscripts and proposal</li>
-<li>Joan Hu (Statistics Simon Fraser University (SFU)) Providing feedback in manuscripts and proposal</li>
-<li>Hubert Wong (UBC, CHEOS) Providing feedback in manuscripts and proposal</li>
-<li>Samar Hejazi (Fraser Health) Reviewing manuscripts and providing feedback in proposal</li>
-<li>Sharon Roman (Patient Partners) Reviewing lay summaries and providing feedback</li>
-<li>Derek Ouyang (SPPH UBC, CHEOS) Trainee, providing feedback on the proposal</li>
-<li>Md Belal Hossain (SPPH UBC) Trainee, conducting research, manuscript writing, presenting research in national and international conferences</li>
-<li>Lucy Mosquera (Statistics UBC) Trainee, conducting research, manuscript writing, presenting research in national and international conferences</li>
-<li>Eric Sanders (Statistics UBC) Trainee, conducting research, manuscript writing, presenting research in national conferences and seminar</li>
-</ul>
+<div id="why-do-we-need-to-be-very-careful-about-which-patients-are-selected-in-a-standard-clinical-trial" class="section level2 unnumbered">
+<h2>Why do we need to be very careful about which patients are selected in a standard clinical trial?</h2>
+<p>As running clinical trials are extremely expensive, and sometimes risky for frail patients (e.g., severely ill or patients with much older age), patients who are entered into the trial are highly selective, and the eligibility criteria for entering in the clinical trial is very restrictive (e.g., not at high risk, not suffering from any other related diseases, or not taking any medication that interacts with the drug under consideration). Such well-controlled clinical trials will be able to show whether there was any effect of that drug in ideal conditions. That means, the design of clinical trials are purposefully perfected for finding out how well the treatment works.</p>
 </div>
-<div id="funding" class="section level2 unnumbered">
-<h2>Funding</h2>
-<div class="rmdcomment">
-<p>
-BC SUPPORT Unit Real World Clinical Trials (RWCT) Methods Cluster Project (RWCT – 002).
-</p>
+<div id="where-do-the-regular-clinical-trials-fail" class="section level2 unnumbered">
+<h2>Where do the regular clinical trials fail?</h2>
+<p>Unfortunately, such a purist approach has consequences. Let us consider the example of multiple sclerosis (MS). Many of the drugs that are popularly used to treat MS were approved based on evidence from clinical trials that excluded patients over the age of 50. However, only considering British Columbia alone, about one-third of the older population (over 50 years of age) are prescribed these exact drugs in clinical practice today. Even though we do not know precisely whether these drugs are effective for people over 50 years of age, doctors continue to prescribe these patients these expensive drugs without much evidence to rely on.</p>
 </div>
+<div id="what-is-a-clinical-trial-protocol" class="section level2 unnumbered">
+<h2>What is a clinical trial protocol?</h2>
+<p>Trial protocols are “documents,” created by researcher (who conducts the clinical trials), that outlines how the trial will be conducted. These documents carefully describe clinical trial objectives (e.g., which two treatments will be compared), trial design and organization (e.g., how long the studies will continue, how long the patients should continue with the treatment or placebo, under what condition or side-effect they should interrupt the treatment), statistical considerations (e.g., how many patients should be recruited, which statistical techniques will be used). The trialists then try to follow the protocol document during the trial implementation as close as possible.</p>
+</div>
+<div id="what-is-a-real-world-pragmatic-clinical-trial-is-it-more-relevant-from-a-patient-perspective" class="section level2 unnumbered">
+<h2>What is a real-world pragmatic clinical trial? Is it more relevant from a patient perspective?</h2>
+<p>‘Pragmatic trials’ include a broader range of subjects compared to a regular clinical trial. . These are the subjects who already receive the treatment in everyday clinical practice in a real-world usual care scenario. Therefore, this population, selected for a pragmatic trial, is much more representative of the real-world than the subjects selected for a regular clinical trial. Consequently, the conclusions from these pragmatic trials are more suitable and relevant for health care decision-makers and a greater number of patients.</p>
+</div>
+<div id="challenges-with-pragmatic-trials-in-estimating-treatment-effect-statistical-analysis-of-these-data-is-not-so-simple-anymore." class="section level2 unnumbered">
+<h2>Challenges with Pragmatic trials in estimating treatment effect: statistical analysis of these data is not so simple anymore.</h2>
+<p>Similar to regular clinical trials, subjects are randomized to different treatment groups at the beginning of the trial (known as the baseline period). Unfortunately, pragmatic trials offer different sets of challenges. As in the usual care scenario (under pragmatic trials), patients can deviate from the protocol, e.g., they may not be adherent to the treatment they were assigned at the beginning of the trial, they may switch treatment, or discontinue as people do in a real-world setting. However, to make the analysis of the data simple, treatment effects are often calculated based on ‘intent-to-treat’ methods. That is, the ‘intent-to-treat’ analysis is done based on which treatment groups (treated or control) patients were assigned to at the beginning of the trial. The analysis does not take into account whether patients actually receive the treatment or not.</p>
+</div>
+<div id="what-is-the-effect-of-the-treatment-on-the-patients-who-actually-took-the-drug" class="section level2 unnumbered">
+<h2>What is the effect of the treatment on the patients who ‘actually took the drug?’</h2>
+<p>One can imagine that, at the end of a trial, the effect of a precisely same treatment will not be identical for the person who took treatment during the entire period of the clinical trial (e.g., 2 years), compared to the person who took treatment only half that time (e.g., 1 year). Statistically, it has been shown that the ‘intent-to-treat’ estimate is influenced by the degree of adherence to the treatment. The estimate of the treatment effect will differ if all patients adhered to the treatment protocol/instruction versus if half of the patients stopped taking the treatment half-way through. This simple method provides an average estimate lumping together the people who may or may not have taken the treatment thoroughly. Such averaged-out results are unlikely to be useful for any patient in deciding whether or not to take the medication. These results will not accurately reflect the true benefit of the treatment for a given patient who would completely take the treatment as instructed. Patients and their healthcare professionals would be likely more interested in results that are more clinically relevant to them. They would like to know, if a patient takes a given treatment, what is his/her chance of getting cured. A patient is unlikely to be interested in knowing the effect of that treatment in someone who has different characteristics (age, sex etc.) than him/her.</p>
+</div>
+<div id="why-analysis-strategies-used-for-standard-clinical-trials-fail-analyzing-pragmatic-trial-data" class="section level2 unnumbered">
+<h2>Why analysis strategies used for standard clinical trials fail analyzing pragmatic trial data?</h2>
+<p>It is clear from the discussion above that, in analyzing the treatment effect, we need to consider this non-adherence to the treatment. Based on this observation, a few other estimation methods were proposed (known as per-protocol and as-treated methods). However, the problem with these methods is that, it is often the case that the randomization principle will be violated when implementing these methods, which is the basis for many clinical trials. As a result of using these simplistic approaches, the results obtained from these analyses are often biased and misleading. On one side, intent-to-treat methods are simple but give potentially wrong results for a patient about the effect of the treatment. Per-protocol methods take into account some aspects of non-adherence, but the reason for treatment discontinuation is not taken into account in the analysis. Hence, the results from this method are also misleading. If a person had to stop taking the treatment due to a side-effect or due to the patient’s perceived impact of the treatment, proper statistical techniques should be used to address such patterns accordingly.</p>
+</div>
+<div id="causal-inference-methods-can-address-some-of-the-above-challenges" class="section level2 unnumbered">
+<h2>‘Causal inference’ methods can address some of the above challenges</h2>
+<p>Fortunately, there has been a large number of methodological and statistical research done for the scenario where randomization may not be present. These research try to carefully identify ‘cause’ of a disease outcome. For example, if a person is getting cured from a disease, whether that is a result of taking the drug or some other reason. Such research is often known as careful analysis of observational data (without randomization) using epidemiologic considerations. Epidemiology is the study of distribution and determinants of disease in populations, epidemiologic considerations mean understanding possible bias sources so that we can remove that bias, and the resulting conclusions from the analysis are meaningful and interpretable (e.g., free from bias, and hence our inference is based on cause and effect). For our context, accounting for bias sources could mean, while trying to decide whether a drug works or not, we think hard about what are the sources of bias e.g., some patients who are supposed to take a prescribed drug, did they actually took the drug. If they did not take the prescribed drugs, then the results would be biased, and we need to apply appropriate methodological and statistical techniques to remove such source of bias. Many of the methods proposed in this area of research (‘causal inference’ methods) have the potential to be applied to the area of pragmatic clinical trials, e.g., particularly, to deal with non-adherence. In the following part we will discuss them in further details.</p>
 
 </div>
 </div>
@@ -226,8 +226,8 @@ BC SUPPORT Unit Real World Clinical Trials (RWCT) Methods Cluster Project (RWCT 
           </div>
         </div>
       </div>
-
-<a href="basic-terminologies-developing-statistical-methods-in-order-to-draw-conclusions-about-whether-a-drug-is-helpful-in-real-world-clinical-practice.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="addressing-the-medication-non-adherence-problem-using-data-that-are-collected-over-time.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -259,7 +259,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/ehsanx/Causal-Inference-Methods-for-Pragmatic-Trials/edit/master/index.Rmd",
+"link": "https://github.com/ehsanx/Causal-Inference-Methods-for-Pragmatic-Trials/edit/master/1Terminologies.Rmd",
 "text": "Edit"
 },
 "history": {

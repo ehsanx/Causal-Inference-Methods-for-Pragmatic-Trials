@@ -1,5 +1,5 @@
 overview
-basic-terminologies
+basic-terminologies-developing-statistical-methods-in-order-to-draw-conclusions-about-whether-a-drug-is-helpful-in-real-world-clinical-practice
 addressing-the-medication-non-adherence-problem-using-data-that-are-collected-over-time
 addressing-the-partial-non-adherence-problem
 addressing-the-non-adherence-problem-using-econometric-methodologies
