@@ -13,7 +13,8 @@
 ## Conference Proceeding {-}
 
 1.	Hossain MB, Mosquera L, Karim ME. Performance of statistical methods to address treatment non-adherence in pragmatic clinical trials with point treatment settings: a simulation study. University of Toronto Journal of Public Health. 2021; 2(2). doi: https://doi.org/10.33137/utjph.v2i2.36762 (Objective 3)
-2.	Mosquera, L., & Karim, M. E. (2021, February). Evaluating Adjusted Per-Protocol Effect Estimators in Pragmatic Trials to Address Treatment Non-Adherence. In International Journal Of Clinical Pharmacy (Vol. 43, No. 1, pp. 298-298). Netherlands: Springer. https://doi.org/10.1007/s11096-020-01213-y (Objective 1)
+2.	Mosquera LK, & Karim ME. (2021, February). ESPACOMP-20-040: Evaluating Adjusted Per-Protocol Effect Estimators in Pragmatic Trials to Address Treatment Non-Adherence. In International Journal Of Clinical Pharmacy (Vol. 43, No. 1, pp. 298-298). Netherlands: Springer. https://doi.org/10.1007/s11096-020-01213-y [[link](https://link.springer.com/article/10.1007%2Fs11096-020-01213-y#Sec106)] (Objective 1)
+3.	Hossain MB, Karim ME. (2021, February). ESPACOMP-20-011: Comparison of statistical methods to address treatment nonadherence in pragmatic trials with only baseline covariate-measurements. In International Journal Of Clinical Pharmacy (Vol. 43, No. 1, pp. 298-298). Netherlands: Springer. https://doi.org/10.1007/s11096-020-01213-y [[link](https://link.springer.com/article/10.1007%2Fs11096-020-01213-y#Sec22)] (Objective 3)
 
 ## Theses by trainees {-}
 
@@ -23,8 +24,8 @@
 
 ## International Conference Presentations {-}
 
-1.	Karim ME (joint work with Hossain MB) Implications of choosing different imputation methods while inferring about per-protocol effects of sustained treatment strategies, ESPACOMP Conference (Virtual conference), Seraing, Belgium; 21 Oct 2021. (Objective 1)
-2.	Hossain MB (joint work with Karim ME) Addressing differential medication non-adherence in pragmatic trials with point-treatment settings: a simulation study. 25th ESPACOMP Conference (Virtual conference), Seraing, Belgium; 21 Oct 2021. (Objective 3)
+1.	Karim ME (joint work with Hossain MB) Implications of choosing different imputation methods while inferring about per-protocol effects of sustained treatment strategies, ESPACOMP Conference (Virtual conference), Seraing, Belgium; 21 Oct 2021. [[link](https://www.espacomp.eu/wp-content/uploads/2021/11/Programme_detailed_07_11.pdf)] (Objective 1)
+2.	Hossain MB (joint work with Karim ME) Addressing differential medication non-adherence in pragmatic trials with point-treatment settings: a simulation study. 25th ESPACOMP Conference (Virtual conference), Seraing, Belgium; 21 Oct 2021. [[link](https://www.espacomp.eu/wp-content/uploads/2021/11/Programme_detailed_07_11.pdf)] (Objective 3)
 3.	Hossain MB (joint work with Karim ME) Comparison of statistical methods to address treatment nonadherence in pragmatic trials with only baseline covariate-measurements. 24th ESPACOMP: International Society for Medication Adherence Conference (Virtual conference), Seraing, Belgium; 10 Nov 2020. (Objective 3)
 4.	Mosquera LK (joint work with Karim ME) Evaluating Adjusted Per-Protocol Effect Estimators in Pragmatic Trials to Address Treatment Non-Adherence. 24th ESPACOMP: International Society for Medication Adherence Conference (Virtual conference), Seraing, Belgium; 10 Nov 2020. (Objective 1)
 5.	Hossain MB (joint work with Karim ME) Review of statistical methods to address treatment nonadherence in the pragmatic trial context. 41st Annual Conference of the International Society for Clinical Biostatistics (ISCB), Kraków, Poland, August 18, 2020 [RP3.28] (Objective 3)
