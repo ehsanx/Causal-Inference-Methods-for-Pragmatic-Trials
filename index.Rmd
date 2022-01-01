@@ -38,7 +38,7 @@ header-includes:
 
 Although clinical trials are considered to be the gold standard for estimating the treatment effectiveness, the results of these trials are often not generalizable. Pragmatic trials include a broader range of subjects, who receive the treatment in everyday clinical practice in a real-world usual care scenario; and are much more representative than those selected for a regular clinical trial. In the pragmatic trials, as in the usual care scenario, patients can deviate from the protocol, e.g., they may not be adherent to the treatment they were assigned at the beginning of the trial, they may switch treatment, discontinue as people do in a real-world setting. Consequently, analyzing the datasets from these pragmatic trials require properly accounting for patients based on whether they have actually received the treatment or not; and hence analysis strategies need to be updated and developed accordingly. The simplistic analysis strategies of clinical trials are often inadequate in the presence of treatment non-adherence. Our project has developed and evaluated methods for promoting causal inference in analyzing pragmatic trial data. Patients and researchers will benefit from these research outcomes, as we have outlined which methods are appropriate to analyze a variety of clinical settings where non-adherence or partial adherence exists in pragmatic trials. Appropriately analyzing the pragmatic trials will inform healthcare professionals, patients, and other stakeholders about the implication of taking that treatment from an evidence-based approach; and the conclusions from these pragmatic trials are more suitable and relevant for health care decision-makers and patients.
 
-Below is an overview prepared at the beginning of the project, back in 2018:
+Below is a technical overview prepared for the methods cluster at the beginning of the project, back in 2018:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ur1etAewqHA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Three [trainees](https://ehsank.com/supervision/) helped in conducting research, manuscript writing, presenting research in national and international conferences:
@@ -47,7 +47,7 @@ Three [trainees](https://ehsank.com/supervision/) helped in conducting research,
 - Lucy Mosquera (Statistics UBC) 
 - Eric Sanders (Statistics UBC) 
 
-and a patient partner was recruited for reviewing lay summaries and providing feedback (also acknowledged in the published manuscripts).
+and a patient partner was recruited for reviewing lay summaries and providing feedback.
 
 ## Objectives {-}
 
@@ -69,7 +69,7 @@ In this project, we have address some of the methodological issues underlying th
 ## Funding {-}
 
 ```{block, type='rmdcomment'}
-BC SUPPORT (Support for People and Patient-Oriented Research and Trials) Unit Real World Clinical Trials (RWCT) Methods Cluster Project (RWCT – 002;  [Overview](https://members.bcsupportunit.ca/methods-clusters/webinars)).
+BC SUPPORT (Support for People and Patient-Oriented Research and Trials) Unit Real World Clinical Trials (RWCT) Methods Cluster Project (RWCT – 002;  [Overview](https://members.bcsupportunit.ca/methods-clusters/webinars); [Description of the cluster projects](https://www.youtube.com/watch?v=B82TTE6v7Eg)).
 ```
 
 ## Contact {-}
